@@ -1,0 +1,109 @@
+2024-12-19 07:44:11 [::1][-][bvq817m9o96jefbll9s6mgbleg][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=10.2...', 'UserRaka', Object(SensitiveParameterValue), NULL)
+#1 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\Users\User\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#8 C:\Users\User\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\Users\User\basic\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('kategori')
+#10 C:\Users\User\basic\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('kategori', 'schema', false)
+#11 C:\Users\User\basic\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('kategori')
+#12 C:\Users\User\basic\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\Users\User\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\Users\User\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('Jenis_Menu')
+#15 C:\Users\User\basic\models\KategoriSearch.php(59): yii\db\BaseActiveRecord->__get('Jenis_Menu')
+#16 C:\Users\User\basic\controllers\KategoriController.php(42): app\models\KategoriSearch->search(Array)
+#17 [internal function]: app\controllers\KategoriController->actionIndex()
+#18 C:\Users\User\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\Users\User\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\Users\User\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#21 C:\Users\User\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('kategori/index', Array)
+#22 C:\Users\User\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\Users\User\basic\web\index.php(12): yii\base\Application->run()
+#24 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\Users\User\basic\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 C:\Users\User\basic\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\Users\User\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#6 C:\Users\User\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\Users\User\basic\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('kategori')
+#8 C:\Users\User\basic\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('kategori', 'schema', false)
+#9 C:\Users\User\basic\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('kategori')
+#10 C:\Users\User\basic\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\Users\User\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\Users\User\basic\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('Jenis_Menu')
+#13 C:\Users\User\basic\models\KategoriSearch.php(59): yii\db\BaseActiveRecord->__get('Jenis_Menu')
+#14 C:\Users\User\basic\controllers\KategoriController.php(42): app\models\KategoriSearch->search(Array)
+#15 [internal function]: app\controllers\KategoriController->actionIndex()
+#16 C:\Users\User\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\Users\User\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#18 C:\Users\User\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#19 C:\Users\User\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('kategori/index', Array)
+#20 C:\Users\User\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\Users\User\basic\web\index.php(12): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+)
+
+2024-12-19 07:43:49 [::1][-][bvq817m9o96jefbll9s6mgbleg][info][application] $_GET = [
+    'r' => 'kategori/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bvq817m9o96jefbll9s6mgbleg'
+    '_csrf' => '146f8058469c6b7d48a68a8eeff547ea63514656c4155d17d7dc8f4142b5615aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZyjqGvecNUWvv0ZhyW89arCZJzq_FIY8\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\User\\basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61046'
+    'SERVER_SOFTWARE' => 'PHP 8.2.12 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=kategori%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\User\\basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=kategori%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_COOKIE' => 'PHPSESSID=bvq817m9o96jefbll9s6mgbleg; _csrf=146f8058469c6b7d48a68a8eeff547ea63514656c4155d17d7dc8f4142b5615aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZyjqGvecNUWvv0ZhyW89arCZJzq_FIY8%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'REQUEST_TIME_FLOAT' => 1734590629.9579
+    'REQUEST_TIME' => 1734590629
+]
