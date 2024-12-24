@@ -1,5 +1,5 @@
-Kelompok 8
-## 📂 Daftar Isi Folder
+Kelompok 8 pengelolaan coffeshop
+## 📂 Daftar Isi Folder coffeshop 
 - Dokumen 
   -  Dokumentasi awal basis data_Kelompok 8.docx
   -  Laporan Akhir Kelompok 8.docx
